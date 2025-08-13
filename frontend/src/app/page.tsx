@@ -49,10 +49,10 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-4xl p-8 space-y-6 bg-white rounded-lg shadow-md">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
+      <div className="w-full max-w-4xl p-8 space-y-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-gray-900">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
             Welcome, {user.name}!
           </h2>
           <button
@@ -63,29 +63,29 @@ export default function Home() {
           </button>
         </div>
         <div className="mt-8">
-          <h3 className="text-lg font-medium leading-6 text-gray-900">
+          <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-100">
             Training Modules
           </h3>
           <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3">
             {/* Placeholder for training modules */}
-            <div className="p-6 bg-gray-50 rounded-lg">
-              <h4 className="text-lg font-bold">A320 Walk Around Inspection</h4>
-              <p className="mt-2 text-sm text-gray-600">
+            <div className="p-6 bg-gray-50 rounded-lg dark:bg-gray-700">
+              <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100">A320 Walk Around Inspection</h4>
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
                 An interactive training module for the A320 walk around
                 inspection.
               </p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg">
-              <h4 className="text-lg font-bold">A320 Aircraft Marshalling</h4>
-              <p className="mt-2 text-sm text-gray-600">
+            <div className="p-6 bg-gray-50 rounded-lg dark:bg-gray-700">
+              <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100">A320 Aircraft Marshalling</h4>
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
                 An interactive training module for A320 aircraft marshalling.
               </p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg">
-              <h4 className="text-lg font-bold">
+            <div className="p-6 bg-gray-50 rounded-lg dark:bg-gray-700">
+              <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100">
                 CFM56-5B Engine General Overview
               </h4>
-              <p className="mt-2 text-sm text-gray-600">
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
                 An interactive training module for the CFM56-5B engine.
               </p>
             </div>

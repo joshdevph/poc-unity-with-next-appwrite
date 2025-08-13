@@ -5,6 +5,7 @@ import { account } from '@/lib/appwrite';
 import { useRouter } from 'next/navigation';
 import { AppwriteException, Models } from 'appwrite';
 import toast from 'react-hot-toast';
+import Link from 'next/link';
 
 export default function Home() {
   const [user, setUser] = useState<Models.User<Models.Preferences> | null>(
@@ -68,13 +69,18 @@ export default function Home() {
           </h3>
           <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3">
             {/* Placeholder for training modules */}
-            <div className="p-6 bg-gray-50 rounded-lg dark:bg-gray-700">
-              <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100">A320 Walk Around Inspection</h4>
+            <Link
+              href="/modules/a320-walk-around"
+              className="p-6 bg-gray-50 rounded-lg dark:bg-gray-700 block"
+            >
+              <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                A320 Walk Around Inspection
+              </h4>
               <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
                 An interactive training module for the A320 walk around
                 inspection.
               </p>
-            </div>
+            </Link>
             <div className="p-6 bg-gray-50 rounded-lg dark:bg-gray-700">
               <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100">A320 Aircraft Marshalling</h4>
               <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
